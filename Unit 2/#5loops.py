@@ -6,6 +6,7 @@
 # while loop: zero time; onetime or infinitely 
 # While <something> true
 
+Problem 1
 num = 5
 
 # WHILE LOOP:
@@ -18,7 +19,7 @@ while num < 10:
     num += 1
 # ends when reaches 10'''
 
-
+#Problem 2:
 '''
 secret = 7 #7 here is an integer
 answer = int(input('please pick a number:')) # CONVERT TO INT -> input would be a string when entered via keyboard
