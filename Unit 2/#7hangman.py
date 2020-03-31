@@ -17,8 +17,10 @@ guess = input('please guess: ')
 if guess in word:
     letter_position = word.index(guess,0,len(word)-1)
     print(letter_position)
-    guess = input('correct! please continue: ')
+    answer = answer.append(guess)
+    print(answer)
 else:
+    print(answer)
     guess = input('guess again: ')
 
 
