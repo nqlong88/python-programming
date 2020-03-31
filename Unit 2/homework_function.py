@@ -92,3 +92,36 @@ def is_isogram(string):
     return f' prob 5: Are all characters unique?: {result}'
 
 print(is_isogram(string))
+
+
+#problem 2: Using split method
+
+#prob 5: Solutions (in class)
+
+#Version 1:
+def is_isogram2(a_string):
+    seen_before = []
+    for char in a_string:
+        if char in seen_before:
+            return False
+        else:
+            seen_before.append(char)    
+    return True
+
+print(is_isogram2('long nguyen'))
+
+#Version 2:
+    # Solve using Prob 1: Letter count function. If count > 1 -> FALSE
+
+
+#Version 3: using FIND function
+def is_isogram3(string):
+    current_index = 0
+    while current_index <= len(string)-2:
+        if string.find(string[current_index], current_index+1, len(string)-2) != -1:
+            return False
+        current_index += 1
+    return True
+
+string.find()
+
