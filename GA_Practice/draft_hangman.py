@@ -27,7 +27,7 @@ if guess in word2:
 print(word2.index(guess))
 print(hangman)
 
-#handman: find char in word function (incl duplicative):
+#hangman: find char in word function (incl duplicative):
 word3 = 'onnexox'
 guess = 'o'
 
