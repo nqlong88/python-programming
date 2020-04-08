@@ -116,8 +116,6 @@ if action == 'popular genre':
     for key in genres_dict:
         if genres_dict[key] == most_pop:
             answer = key
-        
-
 print(genre_list)
 print(genres_dict)
 print(f' the most popular is {answer} which appears {most_pop} times')

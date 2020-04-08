@@ -16,7 +16,7 @@ def dict_merge (dict1, dict2):
             new_dict[key] = dict2[key]
     return new_dict
 
-print(dict_merge(dict1, dict2))
+print(f' problem 1: {dict_merge(dict1, dict2)}')
 
 # problem 2: list_to_dict that accepts a person list (which is a list of lists), and returns a
 #dictionary. Each list in the person list has only two items. The keys of your result dictionary should be the
@@ -33,14 +33,14 @@ def list_to_dict(list1, list2, list3):
     person[list3[0]] = list3[1]
     return person
 
-print(list_to_dict(name, job, city))
+print(f' prob 2: {list_to_dict(name, job, city)}')
 
 
 # problem 3: reverse_dict to reverse a dictionary. This means, given a dictionary, return a new
 #dictionary that has the keys of as values, and the values as keys
 ''' NEED TO COMPLETE'''
 
-dictionary = {'a': 1, 'b': [1,2]} # how to convert lists to tuples
+dictionary = {'a': 1, 'b': 1} # how to convert lists to tuples
 
 def reverse_dict(dictionary):
     rev_dictornary = {}
@@ -48,7 +48,7 @@ def reverse_dict(dictionary):
         rev_dictornary[dictionary[key]] = key
     return rev_dictornary
 
-print (reverse_dict(dictionary))
+print (f' prob 3: {reverse_dict(dictionary)}')
 
 '''
 dictionary = {'a': 1, 'b': [2,3,4]} # how to convert lists to tuples
