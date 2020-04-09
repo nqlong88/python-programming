@@ -9,14 +9,14 @@ p = Person() #create an object: p is object belongs to class Person
 # Class: store 1) properties and 2) Actions
 
 class Rectangle: #create new class/object
-    def __init__(self, l, w):
+    def __init__(self, l, w): # Constructor method
         self.length = l #set property: self, property
         self.width = w #set property
 
-    def area(self):
+    def area(self): # A METHOD
         return self.length * self.width
 
-    def perimeter(self):
+    def perimeter(self): # A METHOD
         return (self.length + self.width)*2
 
 
@@ -28,7 +28,7 @@ print(r1.perimeter())
 
 # Creating a Playlist:
 class Playlist:
-    def __init__(self, name):
+    def __init__(self, name): #self is built-in (default); name: specify Playlist has a name
         self.songs = []
         self.name = name  
 
@@ -71,8 +71,8 @@ class Playlist:
 
 
 
-
-p = Playlist('my_playlist')
+#create a new play list (in a class): my_playlist -> AN OBJECT
+p = Playlist('my_playlist') # this is to tiniate a playlist named "my_playlist". Playlist is a class initiated w a name
 
 
 p.add_song({
