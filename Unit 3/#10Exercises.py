@@ -73,16 +73,19 @@ def letter_count(word):
     return count
 '''
 
+'''
 string = 'iamateststring'
 
 string_dict = {char : string[count] for char in string count += 1 }
 #string_dict = { count for char in string count[char] = count.get(char,0) + 1 }
 
 print(string_dict)
+'''
 
 '''
 Abdul:
+'''
 string = 'string'
 dict_word = {letter:string.count(letter) for letter in string}
 print (dict_word)
-'''
+

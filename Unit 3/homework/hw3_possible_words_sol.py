@@ -1,4 +1,5 @@
-# Solution to problem 5 Hw3:
+# April 6, 2020 
+# Solution to problem 5 Hw3 (After Class 8/Before Class 9):
 
 def letter_count(word):
     count = {}
