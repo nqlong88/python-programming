@@ -6,7 +6,7 @@ class Person: #typically class names are Upper Case
 
 p = Person() #create an object: p is object belongs to class Person
 
-# Class: store 1) properties and 2) Actions
+# Class: store 1) properties and 2) Actions(functions/methods)
 
 class Rectangle: #create new class/object
     def __init__(self, l, w): # Constructor method
@@ -29,8 +29,8 @@ print(r1.perimeter())
 # Creating a Playlist:
 class Playlist:
     def __init__(self, name): #self is built-in (default); name: specify Playlist has a name
-        self.songs = []
-        self.name = name  
+        self.songs = [] #prop 1: has a song list
+        self.name = name  #prop 2: has a playlist name
 
     #write the add_song method:
     def add_song(self,song):

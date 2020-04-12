@@ -22,13 +22,13 @@ print(f' LET US START: {game_progress}; you have {limit} turns')
 
 #3 Look up function: to look up and put letter in the blank list
 def check(guess,word):
-    answer = game_progress
+    #answer = game_progress
     check_index = 0
     while check_index < len(word): # while loops through all char in word
         if word[check_index] == guess:
-            answer[check_index] = guess # this line puts the correct guess in answer list
+            game_progress[check_index] = guess # this line puts the correct guess in answer list
         check_index += 1
-    return answer
+    return game_progress
 
 
 # 4. Kick off & Play: using unfunction in #3

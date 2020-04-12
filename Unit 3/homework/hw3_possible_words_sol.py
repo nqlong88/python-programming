@@ -14,7 +14,7 @@ def possible_words(word_list, char_list):
     valid_words = []
     #iterate over word_list
     for word in word_list:
-        is_word_valid = True
+        is_word_valid = True # True is a boolean variable
         #get a count of each character in word
         char_count = letter_count(word)
         #check each character in the word
@@ -22,7 +22,7 @@ def possible_words(word_list, char_list):
             if letter not in char_list:
                 is_word_valid = False
             else:
-                if char_list.count(letter) != char_count[letter]:
+                if char_list.count(letter) < char_count[letter]:
                     is_word_valid = False
         #add valid word to a list
         if is_word_valid:
@@ -30,3 +30,5 @@ def possible_words(word_list, char_list):
     return valid_words
 legal_words = ['go', 'bat', 'me', 'eat', 'goal', 'boy', 'run']
 letters = ['e', 'o', 'b', 'a', 'm', 'g', 'l']
+
+print(possible_words(legal_words,letters))
