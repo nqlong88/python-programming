@@ -1,5 +1,5 @@
 #problem 1:
-
+import json
 
 class Movie:
     def __init__(self, move_info):
@@ -30,6 +30,12 @@ class Movie:
             result = -1
         return print(f' result is: {result} and count is: {count}')
 
+    #save a file to .json file using dump: save a movie file {name,cast}
+    def save_to_file(self,filename):
+        movie_save = {'movie':self.move_info, 'cast':self.cast} #this is the movie & details to be saved
+        with open(filename, 'w') as saved_file: #create file: create name: 'filename.json', action: 'w' -> assingn to saved_file
+            json.dump(movie_save,saved_file) #take movie info -> put int saved_file
+
 
 nc1 = Movie({'name':'random','genre':'thriller','length': 2})
 nc1.add_cast({'name':'long', 'age': 10, 'sex': 'M'})
@@ -47,5 +53,7 @@ nc2.describe()
 cast_input = [{'name': 'longA', 'age': 10, 'sex': 'M'}, {'name': 'actor 2', 'age': 11, 'sex': 'F'}, {'name': 'actor 3', 'age': 100, 'sex': 'M'}]
 
 nc1.compare_to(cast_input)
+
+nc1.save_to_file('movie_1_class10hw.json')
 
 
