@@ -35,7 +35,7 @@ class Movie:
         return print(f' result is: {result} and count is: {count}')
 
 # Method to save a file to .json file using dump: save a movie file {name,cast}
-    def save_to_file(self,filename):
+    def save_to_file(self,filename): #pass a name into filename when use function
         movie_save = {'movie':self.move_info, 'cast':self.cast} #this is the movie & details to be saved
         with open(filename, 'w') as saved_file: #create file: create name: 'filename.json', action: 'w' -> assingn to saved_file
             json.dump(movie_save, saved_file) #take movie info -> put int saved_file
@@ -62,3 +62,15 @@ nc1.compare_to(cast_comparison)
 nc1.save_to_file('movie_1_class10hw.json')
 
 
+#Sol:
+
+class MovieSol:
+    def __init__(self, t, g, rt):
+        self.title = t
+        self.genre = g
+        self.running = rt 
+        self.cast = []
+
+    def compare_to(self,other_movie):
+        for item in self.cast:
+            if item in 

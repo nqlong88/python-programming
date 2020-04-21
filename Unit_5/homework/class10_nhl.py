@@ -45,6 +45,16 @@ class NhlTeams:
                 oldest_year = int(item['firstYearOfPlay'])
                 oldest_team = item['teamName']
         return print(f'the oldest NHL team is: {oldest_team} / founded in: {oldest_year}')
+    
+    #Solution:
+    def get_oldest_team_sol(self):
+        #using a function to sort a list
+        sorted_list = sorted(self.nhl_stats, key = lambda k: k['firstYearOfPlay'])
+        #print fist item: which is the smallest firstYearOfPlay
+        print(sorted_list[0]['name'])
+
+teams = NhlTeams()
+teams.get_oldest_team_sol()
 
 
 
@@ -52,3 +62,7 @@ hockey = NhlTeams()
 print(hockey.get_team_names())
 hockey.conferences()   
 hockey.get_oldest_team()
+
+#Solution:
+teams = NhlTeams()
+teams.get_oldest_team_sol()
